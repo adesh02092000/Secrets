@@ -26,7 +26,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb+srv://admin-adesh:test-123@cluster0.qtdmg.mongodb.net/<userDB>?retryWrites=true&w=majority", {useNewUrlParser : true, useUnifiedTopology : true});
+mongoose.connect("mongodb+srv://<username>:<password>@cluster0.qtdmg.mongodb.net/<userDB>?retryWrites=true&w=majority", {useNewUrlParser : true, useUnifiedTopology : true});
 mongoose.set("useCreateIndex", true);
 
 const userSchema = new mongoose.Schema({
